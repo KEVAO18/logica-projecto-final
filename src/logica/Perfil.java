@@ -243,7 +243,7 @@ public class Perfil {
     
     /**
      * 
-     * @return 
+     * @return nombre
      */
     public String getNombre() {
         return nombre;
@@ -251,7 +251,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return cc
      */
     public String getCc() {
         return cc;
@@ -259,7 +259,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return telefono
      */
     public String getTelefono() {
         return telefono;
@@ -267,7 +267,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return direccion
      */
     public String getDireccion() {
         return direccion;
@@ -275,7 +275,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return genero
      */
     public int getGenero() {
         return genero;
@@ -283,7 +283,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return estadoCivil
      */
     public int getEstadoCivil() {
         return estadoCivil;
@@ -291,7 +291,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return tipoUsuario
      */
     public int getTipoUsuario() {
         return tipoUsuario;
@@ -299,7 +299,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return nombreUsuario
      */
     public String getNombreUsuario() {
         return nombreUsuario;
@@ -307,7 +307,7 @@ public class Perfil {
 
     /**
      * 
-     * @return 
+     * @return contrasena
      */
     public String getContrasena() {
         return contrasena;
