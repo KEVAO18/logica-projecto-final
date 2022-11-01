@@ -21,7 +21,7 @@ public class Interface{
     
         boolean exit = true;
         
-        int menu, usuarios = 1;
+        int menu, usuarios = 1, sector = 0;
         String actu, mostrarUsuarios;
         String[] menuArray = {
             "Registrar nuevo perfil",
@@ -68,7 +68,7 @@ public class Interface{
                 case 0:
                     personas[usuarios] = new Perfil();
                     personas[usuarios].registrarPerfil();
-                    usuarios ++;
+                    usuarios++;
                     break;
                 case 1:
                     if(usuarios != 0){
@@ -91,15 +91,8 @@ public class Interface{
                     break;
                 case 2:
                     if(usuarios != 0){
-                        for (Perfil p : personas) {
-                            if (p != null) {
-                                mostrarUsuarios += "| Nombre: "+p.getNombre()
-                                        +" | Documento: "+p.getCc()
-                                        +" | Telefono: "+p.getTelefono()
-                                        +" | Direccion: "+p.getDireccion()
-                                        +" | "+gen[p.getGenero()]
-                                        +" | "+estCivil[p.getEstadoCivil()]+" | \n";
-                            }
+                        for (int i = 0; i < usuarios; i++) {
+                            this.mostrarDatosUsuarios(i);
                         }
                     }else{
                         JOptionPane.showMessageDialog(
@@ -107,11 +100,12 @@ public class Interface{
                                 "Sin usuarios"
                         );
                     }
-                    //JOptionPane.showMessageDialog(null, mostrarUsuarios);
                     System.out.println(mostrarUsuarios);
                     break;
                 case 3:
-                    System.out.println(menuArray[menu]);
+                    sectores[sector] = new Sector();
+                    sectores[sector].registrarSector();
+                    sector++;
                     break;
                 case 4:
                     System.out.println(menuArray[menu]);
@@ -136,6 +130,31 @@ public class Interface{
             }
         } while (exit);
     
+    }
+    
+    public void mostrarDatosUsuarios(int id){
+        String[] gen = {
+            "Femenino",
+            "Masculino",
+            "No binario",
+            "Otros"
+        };
+
+        String[] estCivil = {
+            "Casado(a)",
+            "Soltero(a)",
+            "Divorciado(a)",
+            "Union Libre",
+            "Viudo(a)",
+            "Otros"
+        };
+        System.out.print("| Nombre: "+personas[id].getNombre()
+                                        +" | Documento: "+personas[id].getCc()
+                                        +" | Telefono: "+personas[id].getTelefono()
+                                        +" | Direccion: "+personas[id].getDireccion()
+                                        +" | "+gen[personas[id].getGenero()]
+                                        +" | "+estCivil[personas[id].getEstadoCivil()]+" | \n");
+        
     }
     
     public void actualizarPersona(int id){

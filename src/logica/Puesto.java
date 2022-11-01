@@ -10,9 +10,9 @@ public class Puesto {
     private int tieneTecho;
     private int tieneCamaraRefri;
     private int numVitri;
-    private float tamaño;
+    private float tamano;
     private Perfil dueno;
-    private float precio;
+    private float presio;
     private float valorBase;
     private int estaDisponible;
     private Contrato contrato;
@@ -25,9 +25,9 @@ public class Puesto {
             int tieneTecho, 
             int tieneCamaraRefri, 
             int numVitri, 
-            float tamaño, 
+            float tamano, 
             Perfil dueno, 
-            float precio, 
+            float presio, 
             float valorBase, 
             int estaDisponible, 
             Contrato contrato
@@ -35,9 +35,9 @@ public class Puesto {
         this.tieneTecho = tieneTecho;
         this.tieneCamaraRefri = tieneCamaraRefri;
         this.numVitri = numVitri;
-        this.tamaño = tamaño;
+        this.tamano = tamano;
         this.dueno = dueno;
-        this.precio = precio;
+        this.presio = presio;
         this.valorBase = valorBase;
         this.estaDisponible = estaDisponible;
         this.contrato = contrato;
@@ -77,8 +77,8 @@ public class Puesto {
      * 
      * @return tamaño
      */
-    public float getTamaño() {
-        return tamaño;
+    public float getTamano() {
+        return tamano;
     }
 
     /**
@@ -91,10 +91,10 @@ public class Puesto {
 
     /**
      * 
-     * @return precio
+     * @return presio
      */
-    public float getPrecio() {
-        return precio;
+    public float getPresio() {
+        return presio;
     }
 
     /**
@@ -153,8 +153,8 @@ public class Puesto {
      * 
      * @param tamaño 
      */
-    public void setTamaño(float tamaño) {
-        this.tamaño = tamaño;
+    public void setTamano(float tamano) {
+        this.tamano = tamano;
     }
 
     /**
@@ -167,10 +167,10 @@ public class Puesto {
 
     /**
      * 
-     * @param precio 
+     * @param presio 
      */
-    public void setPrecio(float precio) {
-        this.precio = precio;
+    public void setPresio(float presio) {
+        this.presio = presio;
     }
 
     /**
@@ -205,7 +205,7 @@ public class Puesto {
         
         this.setNumVitri(Integer.parseInt(JOptionPane.showInputDialog("Numero de vitrinas")));
         
-        this.setTamaño(Float.parseFloat(JOptionPane.showInputDialog("Tamaño del local")));
+        this.setTamano(Float.parseFloat(JOptionPane.showInputDialog("Tamaño del local")));
         
     }
     

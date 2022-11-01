@@ -284,7 +284,7 @@ public class Perfil {
     
     /**
      * 
-     * @param nombre 
+     * @param nombre {@value xxxxxx xxxxxx xxxxxx xxxxx}
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -292,7 +292,7 @@ public class Perfil {
     
     /**
      * 
-     * @param cc 
+     * @param cc {@value xxxxxxxxxx}
      */
     public void setCc(String cc) {
         this.cc = cc;
