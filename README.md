@@ -84,7 +84,11 @@
     - Privado Perfil codeudor2
 
   - Metodos
-  
+    - Contructor: Contrato()
+    - Contructor: Contrato(...todos los atributos)
+    - getters [todos los atributos]
+    - setters [todos los atributos]
+
 ---
 
 ## plazademercado
