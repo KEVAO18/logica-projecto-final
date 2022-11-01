@@ -11,6 +11,7 @@
     - Contructor: Interface()
     - Vacio: menuAdmin()
     - Vacio: actualizarPersona(Entero id)
+    - Vacio: mostrarDatosUsuarios(Entero id)
 - Perfil
     ### Atributos
     - Privado Cadena nombre
@@ -43,6 +44,8 @@
     ### Metodos
     - Contructor: Puesto()
     - Contructor: Puesto(...todos los atributos)
+    - Vacio registrarPuesto()
+    - Vacio actualizarPuesto()
     - getters [todos los atributos]
     - setters [todos los atributos]
 - Sector
@@ -53,6 +56,8 @@
     ### Metodos
     - Contructor: Sector()
     - Contructor: Sector(...todos los atributos)
+    - Vacio registrarSector()
+    - Vacio actualizarSector()
     - getters [todos los atributos]
     - setters [todos los atributos]
 - Contrato

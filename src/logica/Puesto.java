@@ -197,7 +197,7 @@ public class Puesto {
         this.contrato = contrato;
     }
     
-    public void registrarPuest(){
+    public void registrarPuesto(){
     
         this.setTieneTecho(JOptionPane.showConfirmDialog(null, "Tiene techo", "Techo", 0));
         
@@ -208,6 +208,19 @@ public class Puesto {
         this.setTamano(Float.parseFloat(JOptionPane.showInputDialog("Tamaño del local")));
         
     }
+
+    public void actualizarPuesto(){
+    
+        this.setTieneTecho(JOptionPane.showConfirmDialog(null, "Tiene techo", "Techo", 0));
+        
+        this.setTieneCamaraRefri(JOptionPane.showConfirmDialog(null, "Tiene camara refrigerante", "Camara Refrigerante", 0));
+        
+        this.setNumVitri(Integer.parseInt(JOptionPane.showInputDialog("Numero de vitrinas")));
+        
+        this.setTamano(Float.parseFloat(JOptionPane.showInputDialog("Tamaño del local")));
+        
+    }
+
     
     
 }
