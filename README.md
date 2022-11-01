@@ -86,6 +86,8 @@
   - Metodos
     - Contructor: Contrato()
     - Contructor: Contrato(...todos los atributos)
+    - Vacio generarContrato()
+    - Vacio actualizarContrato()
     - getters [todos los atributos]
     - setters [todos los atributos]
 
