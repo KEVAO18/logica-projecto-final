@@ -10,8 +10,9 @@
     ### Metodos
     - Contructor: Interface()
     - Vacio: menuAdmin()
-    - Vacio: actualizarPersona(Entero id)
     - Vacio: mostrarDatosUsuarios(Entero id)
+    - Vacio: actualizarPersona(Entero id)
+    - Vacio: actualizarPuesto(Entero id)
 - Perfil
     ### Atributos
     - Privado Cadena nombre
@@ -26,6 +27,7 @@
     ### Metodos
     - Contructor: Perfil()
     - Contructor: Perfil(...todos los atributos)
+    - Boleano: validate()
     - Vacio: registrarPerfil()
     - Vacio: actualizarPerfil(Entero id)
     - getters [todos los atributos]
