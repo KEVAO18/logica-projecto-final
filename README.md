@@ -94,3 +94,5 @@
 ## plazademercado
 
 - PlazaDeMercado
+  - Metodos
+    - Principal()
