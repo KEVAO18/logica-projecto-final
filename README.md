@@ -1,20 +1,23 @@
 # logica-projecto-final
+
 ---
+
 ## logica
 
 - Interface
-    ### Atributos
+  - Atributos
     - Publico Perfil personas [1000]
     - Publico Puestos puestos [1000]
     - Publico Sector sectores [1000]
-    ### Metodos
+  - Metodos
     - Contructor: Interface()
     - Vacio: menuAdmin()
     - Vacio: mostrarDatosUsuarios(Entero id)
     - Vacio: actualizarPersona(Entero id)
     - Vacio: actualizarPuesto(Entero id)
 - Perfil
-    ### Atributos
+
+  - Atributos
     - Privado Cadena nombre
     - Privado Cadena cc
     - Privado Cadena telefono
@@ -24,7 +27,8 @@
     - Privado Entero tipoUsuario
     - Privado Cadena nombreUsuario
     - Privado Cadena Contrasena
-    ### Metodos
+
+  - Metodos
     - Contructor: Perfil()
     - Contructor: Perfil(...todos los atributos)
     - Boleano: validate()
@@ -33,8 +37,9 @@
     - getters [todos los atributos]
     - setters [todos los atributos]
 - Puesto
-    ### Atributos
-    - Privado Entero tieneTecho 
+
+  - Atributos
+    - Privado Entero tieneTecho
     - Privado Entero tieneCamaraRefri
     - Privado Entero numVitri
     - Privado Real tamano
@@ -43,7 +48,8 @@
     - Privado Real valorBase
     - Privado Entero estaDisponible
     - Privado Contrato contrato
-    ### Metodos
+
+  - Metodos
     - Contructor: Puesto()
     - Contructor: Puesto(...todos los atributos)
     - Vacio registrarPuesto()
@@ -51,11 +57,13 @@
     - getters [todos los atributos]
     - setters [todos los atributos]
 - Sector
-    ### Atributos
-    - Privado Entero numSector 
+
+  - Atributos
+    - Privado Entero numSector
     - Privado Entero numLocales
     - Privado Real presioBase
-    ### Metodos
+
+  - Metodos
     - Contructor: Sector()
     - Contructor: Sector(...todos los atributos)
     - Vacio registrarSector()
@@ -63,8 +71,11 @@
     - getters [todos los atributos]
     - setters [todos los atributos]
 - Contrato
-
-
+  - Atributos
+  - Metodos
+  
 ---
+
 ## plazademercado
+
 - PlazaDeMercado
