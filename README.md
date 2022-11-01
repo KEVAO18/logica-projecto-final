@@ -71,7 +71,18 @@
     - getters [todos los atributos]
     - setters [todos los atributos]
 - Contrato
+
   - Atributos
+
+    - Privado Entero numeroContrato
+    - Privado Cadena fechaInicio
+    - Privado Cadena fechaFinal
+    - Privado Real montoMensual
+    - Privado Perfil responsable
+    - Privado Perfil dueno
+    - Privado Perfil codeudor1
+    - Privado Perfil codeudor2
+
   - Metodos
   
 ---
