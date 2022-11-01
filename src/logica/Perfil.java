@@ -63,9 +63,25 @@ public class Perfil {
      * 
      */
     public void registrarPerfil(){
-        String[] gen = {"Femenino", "Masculino", "No binario", "Otros"};
-        String[] estCivil = {"Casado(a)", "Soltero(a)", "Divorciado(a)", "Union Libre", "Viudo(a)", "Otros"};
-        String[] tipoUsu = {"Administrador", "Dueño", "Cliente"};
+        String[] gen = {
+            "Femenino", 
+            "Masculino", 
+            "No binario", 
+            "Otros"
+        };
+        String[] estCivil = {
+            "Casado(a)", 
+            "Soltero(a)", 
+            "Divorciado(a)", 
+            "Union Libre", 
+            "Viudo(a)", 
+            "Otros"
+        };
+        String[] tipoUsu = {
+            "Administrador", 
+            "Dueño", 
+            "Cliente"
+        };
         
         JComboBox g = new JComboBox(gen);
         g.setSelectedIndex(0);
@@ -74,29 +90,63 @@ public class Perfil {
         JComboBox t = new JComboBox(tipoUsu);
         t.setSelectedIndex(0);
         
-        this.setNombre(JOptionPane.showInputDialog(null, "Nombre: "));
+        this.setNombre(JOptionPane.showInputDialog(
+                null, 
+                "Nombre: "
+        ));
         
-        this.setCc(JOptionPane.showInputDialog(null, "Documento de identidad"));
+        this.setCc(JOptionPane.showInputDialog(
+                null, 
+                "Documento de identidad"
+        ));
         
-        this.setTelefono(JOptionPane.showInputDialog(null, "Telefono"));
+        this.setTelefono(JOptionPane.showInputDialog(
+                null, 
+                "Telefono"
+        ));
         
-        this.setDireccion(JOptionPane.showInputDialog(null, "Direccion"));
+        this.setDireccion(JOptionPane.showInputDialog(
+                null, 
+                "Direccion"
+        ));
         
-        JOptionPane.showMessageDialog(null, g, "Genero", 0);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                g, 
+                "Genero", 
+                0
+        );
         this.setGenero(g.getSelectedIndex());
-        System.out.println(this.getGenero());
         
-        JOptionPane.showMessageDialog(null, e, "Estado Civil", 0);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                e, 
+                "Estado Civil", 
+                0
+        );
         this.setEstadoCivil(e.getSelectedIndex());
-        System.out.println(this.getEstadoCivil());
         
-        JOptionPane.showMessageDialog(null, t, "Tipo de Usuario", 0);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                t, 
+                "Tipo de Usuario", 
+                0
+        );
         this.setTipoUsuario(t.getSelectedIndex());
-        System.out.println(this.getTipoUsuario());
         
-        this.setNombreUsuario(JOptionPane.showInputDialog(null, null, "Nombre de usuario"));
         
-        this.setContrasena(JOptionPane.showInputDialog(null, null, "Contraseña"));
+        this.setNombreUsuario(JOptionPane.showInputDialog(
+                null, 
+                "Nombre de usuario"
+        ));
+        
+        this.setContrasena(JOptionPane.showInputDialog(
+                null,  
+                "Contraseña"
+        ));
     }
 
     /**
@@ -107,9 +157,28 @@ public class Perfil {
      * 
      */
     public void actualizarPerfil(int id){
-        String[] gen = {"Femenino", "Masculino", "No binario", "Otros"};
-        String[] estCivil = {"Casado(a)", "Soltero(a)", "Divorciado(a)", "Union Libre", "Viudo(a)", "Otros"};
-        String[] tipoUsu = {"Administrador", "Dueño", "Cliente"};
+        
+        String[] gen = {
+            "Femenino", 
+            "Masculino", 
+            "No binario", 
+            "Otros"
+        };
+        
+        String[] estCivil = {
+            "Casado(a)", 
+            "Soltero(a)", 
+            "Divorciado(a)", 
+            "Union Libre", 
+            "Viudo(a)", 
+            "Otros"
+        };
+        
+        String[] tipoUsu = {
+            "Administrador", 
+            "Dueño", 
+            "Cliente"
+        };
         
         JComboBox g = new JComboBox(gen);
         g.setSelectedIndex(0);
@@ -119,46 +188,92 @@ public class Perfil {
         t.setSelectedIndex(0);
         
         switch (id) {
-            case 1:
-                this.setNombre(JOptionPane.showInputDialog(null, "Nombre: "));
+            case 0:
+                this.setNombre(JOptionPane.showInputDialog(
+                        null, 
+                        "Nombre: ",
+                        this.getNombre()
+                ));
                 break;
             
+            case 1:
+                this.setCc(JOptionPane.showInputDialog(
+                        null, 
+                        "Documento de identidad: ",
+                        this.getCc()
+                ));
+                break;
+                
             case 2:
-                this.setCc(JOptionPane.showInputDialog(null, "Documento de identidad"));
+                this.setTelefono(JOptionPane.showInputDialog(
+                        null, 
+                        "Telefono: ",
+                        this.getTelefono()
+                ));
                 break;
                 
             case 3:
-                this.setTelefono(JOptionPane.showInputDialog(null, "Telefono"));
+                this.setDireccion(JOptionPane.showInputDialog(
+                        null, 
+                        "Direccion: ",
+                        this.getDireccion()
+                ));
                 break;
                 
             case 4:
-                this.setDireccion(JOptionPane.showInputDialog(null, "Direccion"));
-                break;
-                
-            case 5:
-                JOptionPane.showMessageDialog(null, g, "Genero", 1);
+                g.setSelectedIndex(this.getGenero());
+                JOptionPane.showMessageDialog(
+                        null, 
+                        g,
+                        "Genero: ",
+                        1
+                );
                 this.setGenero(g.getSelectedIndex());
                 break;
                 
-            case 6:
-                JOptionPane.showMessageDialog(null, e, "Estado Civil", 1);
+            case 5:
+                e.setSelectedIndex(this.getEstadoCivil());
+                JOptionPane.showMessageDialog(
+                        null, 
+                        e, 
+                        "Estado Civil: ", 
+                        1
+                );
                 this.setEstadoCivil(e.getSelectedIndex());
                 break;
                 
-            case 7:
-                JOptionPane.showMessageDialog(null, t, "Tipo de Usuario", 1);
+            case 6:
+                t.setSelectedIndex(this.getTipoUsuario());
+                JOptionPane.showMessageDialog(
+                        null, 
+                        t, 
+                        "Tipo de Usuario: ", 
+                        1
+                );
                 this.setTipoUsuario(t.getSelectedIndex());
                 break;
                 
-            case 8:
-                this.setNombreUsuario(JOptionPane.showInputDialog(null,"Nombre de usuario"));
+            case 7:
+                this.setNombreUsuario(JOptionPane.showInputDialog(
+                        null,
+                        "Nombre de usuario: ",
+                        this.getNombreUsuario()
+                ));
                 break;
                 
-            case 9:
-                this.setContrasena(JOptionPane.showInputDialog(null, "Contraseña"));
+            case 8:
+                this.setContrasena(JOptionPane.showInputDialog(
+                        null, 
+                        "Contraseña: ",
+                        this.getContrasena()
+                ));
                 break;
+                
             default:
-                JOptionPane.showMessageDialog(null, "Error: dato seleccionado fuera de rango");
+                JOptionPane.showMessageDialog(
+                        null, 
+                        "Error: dato seleccionado fuera de rango"
+                );
         }
     }
     
@@ -173,6 +288,7 @@ public class Perfil {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
     /**
      * 
      * @param cc 
@@ -312,4 +428,5 @@ public class Perfil {
     public String getContrasena() {
         return contrasena;
     }
+
 }

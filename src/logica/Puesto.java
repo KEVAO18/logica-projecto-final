@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package logica;
+
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author ADMIN
+ * @author Kevin
  */
 public class Puesto {
     private int tieneTecho;
@@ -18,6 +16,32 @@ public class Puesto {
     private float valorBase;
     private int estaDisponible;
     private Contrato contrato;
+
+    public Puesto() {
+        
+    }
+    
+    public Puesto(
+            int tieneTecho, 
+            int tieneCamaraRefri, 
+            int numVitri, 
+            float tamaño, 
+            Perfil dueno, 
+            float precio, 
+            float valorBase, 
+            int estaDisponible, 
+            Contrato contrato
+    ) {
+        this.tieneTecho = tieneTecho;
+        this.tieneCamaraRefri = tieneCamaraRefri;
+        this.numVitri = numVitri;
+        this.tamaño = tamaño;
+        this.dueno = dueno;
+        this.precio = precio;
+        this.valorBase = valorBase;
+        this.estaDisponible = estaDisponible;
+        this.contrato = contrato;
+    }
     
     /*
      * getters
@@ -171,6 +195,18 @@ public class Puesto {
      */
     public void setContrato(Contrato contrato) {
         this.contrato = contrato;
+    }
+    
+    public void registrarPuest(){
+    
+        this.setTieneTecho(JOptionPane.showConfirmDialog(null, "Tiene techo", "Techo", 0));
+        
+        this.setTieneCamaraRefri(JOptionPane.showConfirmDialog(null, "Tiene camara refrigerante", "Camara Refrigerante", 0));
+        
+        this.setNumVitri(Integer.parseInt(JOptionPane.showInputDialog("Numero de vitrinas")));
+        
+        this.setTamaño(Float.parseFloat(JOptionPane.showInputDialog("Tamaño del local")));
+        
     }
     
     
