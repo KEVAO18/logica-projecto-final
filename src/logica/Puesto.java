@@ -12,7 +12,7 @@ public class Puesto {
     private int numVitri;
     private float tamano;
     private Perfil dueno;
-    private float presio;
+    private float precio;
     private float valorBase;
     private int estaDisponible;
     private Contrato contrato;
@@ -27,7 +27,7 @@ public class Puesto {
             int numVitri, 
             float tamano, 
             Perfil dueno, 
-            float presio, 
+            float precio, 
             float valorBase, 
             int estaDisponible, 
             Contrato contrato
@@ -37,7 +37,7 @@ public class Puesto {
         this.numVitri = numVitri;
         this.tamano = tamano;
         this.dueno = dueno;
-        this.presio = presio;
+        this.precio = precio;
         this.valorBase = valorBase;
         this.estaDisponible = estaDisponible;
         this.contrato = contrato;
@@ -90,10 +90,10 @@ public class Puesto {
 
     /**
      * 
-     * @return presio
+     * @return precio
      */
-    public float getPresio() {
-        return presio;
+    public float getPrecio() {
+        return precio;
     }
 
     /**
@@ -166,10 +166,10 @@ public class Puesto {
 
     /**
      * 
-     * @param presio 
+     * @param precio 
      */
-    public void setPresio(float presio) {
-        this.presio = presio;
+    public void setPrecio(float precio) {
+        this.precio = precio;
     }
 
     /**
@@ -204,7 +204,7 @@ public class Puesto {
             private int numVitri;
             private float tamano;
             private Perfil dueno;
-            private float presio;
+            private float precio;
             private float valorBase;
             private int estaDisponible;
             private Contrato contrato;
@@ -214,9 +214,11 @@ public class Puesto {
         
         this.setTieneCamaraRefri(JOptionPane.showConfirmDialog(null, "Tiene camara refrigerante", "Camara Refrigerante", 0));
         
-        this.setNumVitri(Integer.parseInt(JOptionPane.showInputDialog("Numero de vitrinas")));
+        this.setNumVitri(Integer.parseInt(JOptionPane.showInputDialog(null, "Numero de vitrinas", 0)));
         
-        this.setTamano(Float.parseFloat(JOptionPane.showInputDialog("Tamaño del local")));
+        this.setTamano(Float.parseFloat(JOptionPane.showInputDialog(null ,"Tamaño del local", 0)));
+        
+        
         
     }
 
@@ -229,7 +231,7 @@ public class Puesto {
             private int numVitri;
             private float tamano;
             private Perfil dueno;
-            private float presio;
+            private float precio;
             private float valorBase;
             private int estaDisponible;
             private Contrato contrato;

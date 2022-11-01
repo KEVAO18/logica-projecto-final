@@ -4,12 +4,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Melani
+ * @author Melany
  */
 public class Sector {
     private int numSector;
     private int numLocales;
-    private float presioBase;
+    private float precioBase;
 
     /**
      * 
@@ -22,16 +22,16 @@ public class Sector {
      * 
      * @param numSector
      * @param numLocales
-     * @param presioBase 
+     * @param precioBase 
      */
     public Sector(
             int numSector, 
             int numLocales, 
-            float presioBase
+            float precioBase
     ) {
         this.numSector = numSector;
         this.numLocales = numLocales;
-        this.presioBase = presioBase;
+        this.precioBase = precioBase;
     }
     
     /**
@@ -40,7 +40,7 @@ public class Sector {
     public void registrarSector(){
         this.setNumSector(Integer.parseInt(JOptionPane.showInputDialog("Numero del sector")));
         this.setNumLocales(Integer.parseInt(JOptionPane.showInputDialog("Numero de locales que posee el sector")));
-        this.setPresioBase(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el presio base que posee el sector")));
+        this.setPrecioBase(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el presio base que posee el sector")));
     }
     
     /**
@@ -49,7 +49,7 @@ public class Sector {
     public void actualizarSector() {
         this.setNumSector(Integer.parseInt(JOptionPane.showInputDialog("Numero del sector")));
         this.setNumLocales(Integer.parseInt(JOptionPane.showInputDialog("Numero de locales que posee el sector")));
-        this.setPresioBase(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el presio base que posee el sector")));
+        this.setPrecioBase(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el presio base que posee el sector")));
     }
     
     /**
@@ -70,10 +70,10 @@ public class Sector {
 
     /**
      * 
-     * @return presioBase
+     * @return precioBase
      */
-    public float getPresioBase() {
-        return presioBase;
+    public float getPrecioBase() {
+        return precioBase;
     }
 
     /**
@@ -94,10 +94,10 @@ public class Sector {
 
     /**
      * 
-     * @param presioBase 
+     * @param precioBase 
      */
-    public void setPresioBase(float presioBase) {
-        this.presioBase = presioBase;
+    public void setPrecioBase(float precioBase) {
+        this.precioBase = precioBase;
     }
     
 }

@@ -1,6 +1,5 @@
 package logica;
 
-import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
@@ -269,7 +268,7 @@ public class Interface{
             "# de Vitrinas",
             "Tamaño",
             "Dueño",
-            "Presio",
+            "Precio",
             "Valor Base",
             "Disponibilidad",
             "Contrato"
