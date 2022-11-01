@@ -13,8 +13,11 @@
     - Contructor: Interface()
     - Vacio: menuAdmin()
     - Vacio: mostrarDatosUsuarios(Entero id)
+    - Vacio: mostrarDatosPuestosOcupados(Entero id)
+    - Vacio: mostrarDatosPuestosNoOcupados(Entero id)
     - Vacio: actualizarPersona(Entero id)
     - Vacio: actualizarPuesto(Entero id)
+    - Vacio: actualizarSector(Entero id)
 - Perfil
 
   - Atributos
