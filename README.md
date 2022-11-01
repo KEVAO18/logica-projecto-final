@@ -15,6 +15,7 @@
     - Vacio: mostrarDatosUsuarios(Entero id)
     - Vacio: mostrarDatosPuestosOcupados(Entero id)
     - Vacio: mostrarDatosPuestosNoOcupados(Entero id)
+    - Vacio: mostrarSectores(Entero id)
     - Vacio: actualizarPersona(Entero id)
     - Vacio: actualizarPuesto(Entero id)
     - Vacio: actualizarSector(Entero id)

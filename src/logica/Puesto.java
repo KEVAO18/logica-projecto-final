@@ -197,6 +197,8 @@ public class Puesto {
     }
     
     public void registrarPuesto(){
+        
+        Perfil p = new Perfil();
     
         /*
             private int tieneTecho;
