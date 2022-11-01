@@ -1,5 +1,6 @@
 package logica;
 
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
@@ -21,7 +22,7 @@ public class Interface{
     
         boolean exit = true;
         
-        int menu, usuarios = 1, sector = 0;
+        int menu, usuarios = 1, sector = 0, usuario;
         String actu, mostrarUsuarios;
         String[] menuArray = {
             "Registrar nuevo perfil",
@@ -71,6 +72,8 @@ public class Interface{
                     usuarios++;
                     break;
                 case 1:
+                    int salirAct = 0;
+                    usuario = 0;
                     if(usuarios != 0){
                         actu = JOptionPane.showInputDialog(
                                 "Ingresar el documento del usuario que desea actualizar"
@@ -78,9 +81,14 @@ public class Interface{
                         
                         for (int i = 0; i < usuarios; i++) {
                             if (personas[i].getCc().equals(actu)) {
-                                this.actualizarPersona(i);
+                                usuario = i;
                                 break;
                             }
+                        }
+                        
+                        while (salirAct == 0) {
+                            this.actualizarPersona(usuario);
+                            salirAct = JOptionPane.showConfirmDialog(null, "Desea dejar de actualizar a este usuario?");
                         }
                     }else{
                         JOptionPane.showMessageDialog(
