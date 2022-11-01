@@ -47,11 +47,10 @@ public class Puesto {
      * getters
      */
     
-    
     /**
      * 
      * 
-     * @return tiene techo
+     * @return tieneTecho
      */
     public int getTieneTecho() {
         return tieneTecho;
@@ -151,7 +150,7 @@ public class Puesto {
     
     /**
      * 
-     * @param tamaño 
+     * @param tamano 
      */
     public void setTamano(float tamano) {
         this.tamano = tamano;
@@ -199,6 +198,18 @@ public class Puesto {
     
     public void registrarPuesto(){
     
+        /*
+            private int tieneTecho;
+            private int tieneCamaraRefri;
+            private int numVitri;
+            private float tamano;
+            private Perfil dueno;
+            private float presio;
+            private float valorBase;
+            private int estaDisponible;
+            private Contrato contrato;
+         */
+        
         this.setTieneTecho(JOptionPane.showConfirmDialog(null, "Tiene techo", "Techo", 0));
         
         this.setTieneCamaraRefri(JOptionPane.showConfirmDialog(null, "Tiene camara refrigerante", "Camara Refrigerante", 0));
@@ -210,6 +221,19 @@ public class Puesto {
     }
 
     public void actualizarPuesto(){
+        
+        /*
+            private int id;
+            private int tieneTecho;
+            private int tieneCamaraRefri;
+            private int numVitri;
+            private float tamano;
+            private Perfil dueno;
+            private float presio;
+            private float valorBase;
+            private int estaDisponible;
+            private Contrato contrato;
+        */
     
         this.setTieneTecho(JOptionPane.showConfirmDialog(null, "Tiene techo", "Techo", 0));
         

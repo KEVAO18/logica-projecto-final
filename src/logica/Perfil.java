@@ -58,6 +58,40 @@ public class Perfil {
         this.contrasena = contrasena;
     }
     
+    public boolean validate(){
+        
+        if (this.getNombre().isBlank()) {
+            
+            this.setNombre(JOptionPane.showInputDialog(null, "Ingrese un nombre"));
+        
+        }else if(this.getCc().isBlank()){
+            
+            this.setCc(JOptionPane.showInputDialog(null, "Ingrese un documento"));
+        
+        }else if(this.getTelefono().isBlank()){
+            
+            this.setTelefono(JOptionPane.showInputDialog(null, "Ingrese un telefono"));
+        
+        }else if(this.getDireccion().isBlank()){
+            
+            this.setDireccion(JOptionPane.showInputDialog(null, "Ingrese una direccion"));
+        
+        }else if(this.getNombreUsuario().isBlank()){
+            
+            this.setNombreUsuario(JOptionPane.showInputDialog(null, "Ingrese un nombre de usuario"));
+        
+        }else if(this.getContrasena().isBlank()){
+            
+            this.setContrasena(JOptionPane.showInputDialog(null, "Ingrese una contraseña"));
+        
+        }else{
+            
+            JOptionPane.showMessageDialog(null, "Usuario creado con exito");
+            return false;
+        }
+        return true;
+    }
+    
     /**
      * 
      * Registra la informacion de un nuevo usuario
@@ -83,6 +117,8 @@ public class Perfil {
             "Dueño", 
             "Cliente"
         };
+        
+        boolean valid = true;
         
         JComboBox g = new JComboBox(gen);
         g.setSelectedIndex(0);
@@ -148,6 +184,12 @@ public class Perfil {
                 null,  
                 "Contraseña"
         ));
+        
+        
+        
+        while(valid){
+            valid = this.validate();
+        }
     }
 
     /**
