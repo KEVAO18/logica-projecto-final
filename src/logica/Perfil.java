@@ -5,7 +5,8 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author ADMIN
+ * @author Kevin
+ * 
  */
 public class Perfil {
 
@@ -299,7 +300,7 @@ public class Perfil {
 
     /**
      * 
-     * @param telefono 
+     * @param telefono {@value xxx-xxx-xx-xx}
      */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
@@ -307,7 +308,7 @@ public class Perfil {
 
     /**
      * 
-     * @param direccion 
+     * @param direccion {@value cll xx # xx-xx}
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
@@ -315,7 +316,7 @@ public class Perfil {
 
     /**
      * 
-     * @param Genero 
+     * @param Genero {@value [0-3]}
      */
     public void setGenero(int Genero) {
         this.genero = Genero;
@@ -323,7 +324,7 @@ public class Perfil {
 
     /**
      * 
-     * @param estadoCivil 
+     * @param estadoCivil {@value [0-5]}
      */
     public void setEstadoCivil(int estadoCivil) {
         this.estadoCivil = estadoCivil;
@@ -331,7 +332,7 @@ public class Perfil {
 
     /**
      * 
-     * @param tipoUsuario 
+     * @param tipoUsuario {@value [0-2]}
      */
     public void setTipoUsuario(int tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
@@ -339,7 +340,7 @@ public class Perfil {
 
     /**
      * 
-     * @param nombreUsuario 
+     * @param nombreUsuario {@value String}
      */
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
@@ -347,7 +348,7 @@ public class Perfil {
 
     /**
      * 
-     * @param contrasena 
+     * @param contrasena {@value String}
      */
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
@@ -358,7 +359,7 @@ public class Perfil {
     ------------------*/
     
     /**
-     * 
+     *  
      * @return nombre
      */
     public String getNombre() {
@@ -366,7 +367,7 @@ public class Perfil {
     }
 
     /**
-     * 
+     *  
      * @return cc
      */
     public String getCc() {
@@ -374,7 +375,7 @@ public class Perfil {
     }
 
     /**
-     * 
+     *  
      * @return telefono
      */
     public String getTelefono() {
@@ -382,7 +383,7 @@ public class Perfil {
     }
 
     /**
-     * 
+     *  
      * @return direccion
      */
     public String getDireccion() {

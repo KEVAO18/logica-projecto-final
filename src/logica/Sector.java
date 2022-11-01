@@ -2,7 +2,7 @@ package logica;
 
 /**
  *
- * @author ADMIN
+ * @author Melani
  */
 public class Sector {
     private int numSector;

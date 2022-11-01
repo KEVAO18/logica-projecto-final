@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Kevin
+ * @author Samuel
  */
 public class Puesto {
     private int tieneTecho;

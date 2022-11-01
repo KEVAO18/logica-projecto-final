@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author ADMIN
+ * @author Kevin
  */
 public class Interface{
 
